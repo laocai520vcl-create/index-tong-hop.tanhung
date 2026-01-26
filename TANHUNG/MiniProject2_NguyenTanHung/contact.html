@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>LIÊN HỆ | THE NEXUS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* CSS NÚT BẤM CỐ ĐỊNH TẠI ĐẦU TRANG - KHÔNG DI CHUYỂN THEO KHI CUỘN */
+        .back-btn {
+            position: absolute; /* Thay đổi từ fixed sang absolute */
+            left: 40px; 
+            top: 40px; 
+            z-index: 1000;
+            
+            /* Màu sắc và Viền xanh lá */
+            color: var(--primary); 
+            border: 2px solid var(--primary);
+            background: rgba(0, 255, 170, 0.05);
+            padding: 12px 20px;
+            border-radius: 50px;
+            
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            transition: all 0.4s ease;
+            opacity: 0.8;
+        }
+
+        .back-btn:hover {
+            opacity: 1;
+            background: var(--primary);
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+        }
+
+        .back-btn span { 
+            font-size: 1.1rem; 
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+    
+    <a href="index.html" class="back-btn">
+        <span>←</span> Back to Home
+    </a>
+
+    <main>
+        <section>
+            <div class="contact-container reveal">
+                <h2 style="font-size: 7rem; line-height: 1; margin-bottom: 60px;">LET'S TALK<br><span style="color:var(--primary)">EVERYTHING.</span></h2>
+                <form id="mainForm">
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label>Tên của bạn</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label>Email cá nhân</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="msg" required placeholder=" " rows="4"></textarea>
+                        <label>Mô tả ý tưởng dự án của bạn...</label>
+                    </div>
+                    <button type="submit" class="btn-premium">GỬI YÊU CẦU</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>DỊCH VỤ | THE NEXUS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* CSS NÚT BẤM CỐ ĐỊNH TẠI ĐẦU TRANG - PHONG CÁCH XANH LÁ */
+        .back-btn {
+            position: absolute; /* Tuyệt đối tại đầu trang, không chạy theo khi cuộn */
+            left: 40px; 
+            top: 40px; 
+            z-index: 1001; /* Nằm trên cả header */
+            
+            /* Màu sắc và Viền xanh lá */
+            color: var(--primary); 
+            border: 2px solid var(--primary);
+            background: rgba(0, 255, 170, 0.05);
+            padding: 12px 20px;
+            border-radius: 50px;
+            
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            transition: all 0.4s ease;
+            opacity: 0.8;
+        }
+
+        .back-btn:hover {
+            opacity: 1;
+            background: var(--primary);
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+        }
+
+        .back-btn span { 
+            font-size: 1.1rem; 
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+    
+    <a href="index.html" class="back-btn">
+        <span>←</span> Back to Home
+    </a>
+
+    <header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="reveal" style="font-size: 6rem; margin-bottom: 40px;">HỆ SINH THÁI</h2>
+            <div class="bento-grid reveal">
+                <div class="bento-card span-2 row-2">
+                    <h3>UI/UX Design</h3>
+                    <p>Thiết kế giao diện người dùng đỉnh cao, tập trung vào cảm xúc và sự tối giản nhưng tinh tế.</p>
+                </div>
+                <div class="bento-card row-2">
+                    <h3>Web Develop</h3>
+                    <p>Sử dụng các Framework hiện đại nhất để tạo ra tốc độ tải trang dưới 1 giây.</p>
+                </div>
+                <div class="bento-card"><h3>Branding</h3><p>Định vị thương hiệu số.</p></div>
+                <div class="bento-card"><h3>SEO Pro</h3><p>Tối ưu hóa tìm kiếm.</p></div>
+                <div class="bento-card span-2">
+                    <h3>Motion Graphics</h3>
+                    <p>Chuyển động mượt mà tạo nên sự sống động cho từng trang web.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

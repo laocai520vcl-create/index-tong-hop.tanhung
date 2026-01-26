@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>DỰ ÁN | THE NEXUS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* CSS NÚT BẤM CỐ ĐỊNH TẠI ĐẦU TRANG - KHÔNG DI CHUYỂN THEO KHI CUỘN */
+        .back-btn {
+            position: absolute; /* Giữ nguyên vị trí tuyệt đối tại đầu trang */
+            left: 40px; 
+            top: 40px; 
+            z-index: 1000;
+            
+            /* Màu sắc và Viền xanh lá */
+            color: var(--primary); 
+            border: 2px solid var(--primary);
+            background: rgba(0, 255, 170, 0.05);
+            padding: 12px 20px;
+            border-radius: 50px;
+            
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            transition: all 0.4s ease;
+            opacity: 0.8;
+        }
+
+        .back-btn:hover {
+            opacity: 1;
+            background: var(--primary);
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+        }
+
+        .back-btn span { 
+            font-size: 1.1rem; 
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+
+    <a href="index.html" class="back-btn">
+        <span>←</span> Back to Home
+    </a>
+
+    <main>
+        <section>
+            <h2 class="reveal" style="font-size: 6rem; margin-bottom: 50px;">KIỆT TÁC</h2>
+            <div class="bento-grid">
+                <div class="bento-card row-2 span-2 reveal" style="background: url('https://picsum.photos/1000/1000?1') center/cover;"></div>
+                <div class="bento-card reveal" style="background: url('https://picsum.photos/600/600?2') center/cover;"></div>
+                <div class="bento-card reveal" style="background: url('https://picsum.photos/600/600?3') center/cover;"></div>
+                <div class="bento-card span-2 reveal" style="background: url('https://picsum.photos/1000/600?4') center/cover;"></div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
